@@ -38,5 +38,7 @@ Santiago Cruz
 Process finished with exit code 0
 ```
 
+![Screen Shot 2019-09-27 at 5 35 15 AM](https://user-images.githubusercontent.com/24994818/65763258-9ba7a300-e0e8-11e9-93a7-bd54efd0d1e2.png)
+
 ![Screen Shot 2019-09-27 at 5 34 33 AM](https://user-images.githubusercontent.com/24994818/65763205-7f0b6b00-e0e8-11e9-873f-f11efec21d51.png)
 
