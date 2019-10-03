@@ -10,4 +10,6 @@ public class Vampyre extends Enemy {
         int damageDone = (damage/2);
         super.takeDamage(damageDone);
     }
+
+
 }
