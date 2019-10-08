@@ -7,9 +7,9 @@ package com.example.stringandint;
 public class CustomString {
     public static void main(String[] args) {
         String name = "Carlos Santiago";
-                System.out.println(name);
+        System.out.println(name);
 
-                String anotherName;
+        String anotherName;
         anotherName = "Santiago Cruz";
         System.out.println(anotherName);
 
