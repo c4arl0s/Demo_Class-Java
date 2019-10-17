@@ -72,6 +72,152 @@ public class Demo {
 }
 ```
 
+# Enemy Class
+
+``` 
+package com.example.stringandint;
+
+public class Enemy {
+    private String name;
+    private int hitPoints;
+    private int lives;
+
+    public Enemy(String name, int hitPoints, int lives) {
+        this.name = name;
+        this.hitPoints = hitPoints;
+        this.lives = lives;
+    }
+
+    public void takeDamage(int damage) {
+        int remainingHitPoints = this.hitPoints - damage;
+        if (remainingHitPoints > 0) {
+            setHitPoints(remainingHitPoints);
+            System.out.println("I took " + damage + " points damage, and have " + remainingHitPoints + " left ");
+        }
+        else {
+            this.lives = this.lives - 1;
+            System.out.println("I´ve lost a life");
+        }
+    }
+
+    public void showInfo() {
+        System.out.println("name: " + this.name + " hitpoints " + this.hitPoints + " Lives: " + this.lives);
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getHitPoints() {
+        return hitPoints;
+    }
+
+    public void setHitPoints(int hitPoints) {
+        this.hitPoints = hitPoints;
+    }
+
+    public int getLives() {
+        return lives;
+    }
+
+    public void setLives(int lives) {
+        this.lives = lives;
+    }
+}
+```
+
+# Player Class
+
+```
+package com.example.stringandint;
+
+public class Player {
+    String handleName;
+    int lives;
+    int level;
+    int score;
+
+    public Player() {
+        handleName = "Unknown Player";
+        lives = 3;
+        level = 1;
+        score = 0;
+    }
+
+    public String getHandleName() {
+        return handleName;
+    }
+
+    public void setHandleName(String handle) {
+        if(handleName.length() < 3) {
+            return;
+        }
+        handleName = handle;
+    }
+
+    public int getLives() {
+        return lives;
+    }
+
+    public void setLives(int lives) {
+        this.lives = lives;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int getScore() {
+        return score;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+}
+```
+
+# Troll Class
+
+```
+package com.example.stringandint;
+
+public class Troll extends Enemy {
+    public Troll(String name) {
+        super(name, 27,1);
+    }
+}
+```
+
+
+# Vampyre Class
+
+```
+package com.example.stringandint;
+
+public class Vampyre extends Enemy {
+    public Vampyre(String name) {
+        super(name, 20, 30);
+    }
+
+    @Override
+    public void takeDamage(int damage) {
+        int damageDone = (damage/2);
+        super.takeDamage(damageDone);
+    }
+}
+```
+
+
+
 
 
 
