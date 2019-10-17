@@ -1,5 +1,4 @@
-# StringAndInteger_Java
-StringAndInteger_Java
+# Demo Class
 
 ``` java 
 package com.example.stringandint;
