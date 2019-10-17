@@ -74,7 +74,7 @@ public class Demo {
 
 # Enemy Class
 
-``` 
+``` java
 package com.example.stringandint;
 
 public class Enemy {
@@ -132,7 +132,7 @@ public class Enemy {
 
 # Player Class
 
-```
+``` java
 package com.example.stringandint;
 
 public class Player {
@@ -187,7 +187,7 @@ public class Player {
 
 # Troll Class
 
-```
+``` java
 package com.example.stringandint;
 
 public class Troll extends Enemy {
@@ -200,7 +200,7 @@ public class Troll extends Enemy {
 
 # Vampyre Class
 
-```
+``` java
 package com.example.stringandint;
 
 public class Vampyre extends Enemy {
